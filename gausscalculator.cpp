@@ -14,10 +14,10 @@ int main() {
       }
    }
    //to find the elements of diagonal matrix
-   for(j=1; j<=n; j++) {
+   for(j=1; j<=n; j++) {                      // Implementing Gaussian Elimination to solve the Equations
       for(i=1; i<=n; i++) {
          if(i!=j) {
-            b=a[i][j]/a[j][j];
+            b=a[i][j]/a[j][j];       
             for(k=1; k<=n+1; k++) { 
                a[i][k]=a[i][k]-b*a[j][k];
             }
